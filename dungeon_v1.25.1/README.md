@@ -10,7 +10,7 @@ Give a player the dungeonbuilder tag:
   /tag @s add dungeonbuilder
 
 Then trigger generation by typing in chat:
-  !dungeongen
+  /scriptevent d:g
 
 The dungeon generates relative to your current position.
 Floor 0 bottom starts at your Y. X/Z origin is your current X/Z.
@@ -25,7 +25,6 @@ Floor 0 bottom starts at your Y. X/Z origin is your current X/Z.
 - scripts/dungeonGen.js    Entry point + command handler
 
 ## Notes
-- Uses !dungeongen (chat prefix) since BDS scripting does not support custom slash commands natively
 - Generation runs asynchronously via system.runJob() - server stays responsive
 - Each floor takes 30-180 seconds depending on room density
 - All floors are reachable from entrance via flood-fill validation
