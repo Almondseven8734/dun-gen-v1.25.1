@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Dungeon Generator",
+    "description": "v17 — guaranteed reachability, min tunnel radius 1.5, staircase punches both separators, floor2 reception anchored at staircase XZ",
+    "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "version": [1, 7, 0],
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [{
+    "description": "Dungeon Gen Scripts",
+    "type": "script", "language": "javascript",
+    "uuid": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+    "version": [1, 7, 0],
+    "entry": "scripts/dungeonGen.js"
+  }],
+  "dependencies": [{ "module_name": "@minecraft/server", "version": "1.15.0" }]
+}
