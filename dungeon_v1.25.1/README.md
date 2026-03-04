@@ -26,7 +26,7 @@ Floor 0 bottom starts at your Y. X/Z origin is your current X/Z.
 
 ## Notes
 - Generation runs asynchronously via system.runJob() - server stays responsive
-- Each floor takes 30-180 seconds depending on room density
+- Each floor takes 30 or less seconds depending on room density
 - All floors are reachable from entrance via flood-fill validation
 - Max 2 rerolls per floor before fatal error
 - Staircase locations saved to world dynamic properties
